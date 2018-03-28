@@ -32,7 +32,7 @@ echo "CREATE TABLE vancouver_opendata.business_licence (
   FeePaid float,
   ExtractDate text,
   Year int,
-  PRIMARY KEY ((LicenceRSN, Year), BusinessTradeName)
+  PRIMARY KEY (LicenceRSN, Year)
 );" | cqlsh
 
 ## injest csv files into the table
