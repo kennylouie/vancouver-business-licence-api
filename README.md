@@ -1,1 +1,10 @@
 # vancouver-business-licence-api
+
+## Background
+
+This repo will contain a codebase for the continuing of our winning prototype from the 2018 Vancouver Open Data Day Hackathon where we tackled housing affordability (https://www.opendatabc.ca/pages/vodday-2018-vancouver-open-data-day-hackathon). We prototyped an API predicted geolocations across the Greater Vancouver Regional District that had similar 'surroundings'. Surroundings we defined as having similar infrastructure, e.g. building types, stores nearby, number of hospitals, number of schools, cost of rent, etc.. We felt this would be valuable to those struggling to find a suitable location to rent that would be similar to where they are currently renting. With increasing rent prices, many Vancouverites are forced to move our of their current rental unit to find cheaper rent. This tool might be useful.
+
+### Concept
+
+1. Build a Cassandra backend to store the 1997-2018 business licence dataset.
+2. Build a Go API to access the Cassandra database.
