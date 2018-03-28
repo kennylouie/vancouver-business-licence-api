@@ -15,10 +15,10 @@ This repo will contain a codebase for the continuing of our winning prototype fr
 
 ### Requirements
 
-__Go 1.10
-openjdk 1.8.0_151
-Cassandra 3.11.2
-cqlsh 5.0.1__
+__Go 1.10__
+__openjdk 1.8.0_151__
+__Cassandra 3.11.2__
+__cqlsh 5.0.1__
 
 1. Setup an AWS EC2 to host our data and make it accessible.
 
