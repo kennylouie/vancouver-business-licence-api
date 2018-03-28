@@ -2,7 +2,7 @@
 
 ## Background
 
-This repo will contain a codebase for the continuing of our winning prototype from the 2018 Vancouver Open Data Day Hackathon where we tackled housing affordability (https://www.opendatabc.ca/pages/vodday-2018-vancouver-open-data-day-hackathon). We prototyped an API predicted geolocations across the Greater Vancouver Regional District that had similar 'surroundings'. Surroundings we defined as having similar infrastructure, e.g. building types, stores nearby, number of hospitals, number of schools, cost of rent, etc.. We felt this would be valuable to those struggling to find a suitable location to rent that would be similar to where they are currently renting. With increasing rent prices, many Vancouverites are forced to move our of their current rental unit to find cheaper rent. This tool might be useful.
+This repo will contain a codebase for the continuing of our winning prototype from the 2018 Vancouver Open Data Day Hackathon where we tackled housing affordability (https://www.opendatabc.ca/pages/vodday-2018-vancouver-open-data-day-hackathon; https://www.instagram.com/p/BgDW4WAH7GN/?tagged=vodday). We prototyped an API predicted geolocations across the Greater Vancouver Regional District that had similar 'surroundings'. Surroundings we defined as having similar infrastructure, e.g. building types, stores nearby, number of hospitals, number of schools, cost of rent, etc.. We felt this would be valuable to those struggling to find a suitable location to rent that would be similar to where they are currently renting. With increasing rent prices, many Vancouverites are forced to move our of their current rental unit to find cheaper rent. This tool might be useful.
 
 ### Concept
 
@@ -23,7 +23,7 @@ aws ec2 run-instances --image-id ami-79873901 --count 1 \
 
 3. Build a simple golang server to relay http requests to access the cassandra database. This was adapted from Ian Douglas (https://getstream.io/blog/building-a-performant-api-using-go-and-cassandra/).
 
-The server is live and execute GET requests for some 2018 business licence data, e.g. licenceRSN = 2997942
+The server is live and allows for GET requests for some 2018 business licence data, e.g. licenceRSN = 2997942
 ```
 http://34.218.47.133:8081/licence/2997942
 ```
