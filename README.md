@@ -8,3 +8,13 @@ This repo will contain a codebase for the continuing of our winning prototype fr
 
 1. Build a Cassandra backend to store the 1997-2018 business licence dataset.
 2. Build a Go API to access the Cassandra database.
+
+## Progress
+
+1. Setup an AWS EC2 to host our data and make it accessible.
+
+```
+aws ec2 run-instances --image-id ami-79873901 --count 1 \
+--instance-type t2.micro --key-name *your-key-name* --security-groups *your-security-groups* \
+--user-data file://user-data.sh
+```
