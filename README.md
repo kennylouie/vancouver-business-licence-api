@@ -18,3 +18,5 @@ aws ec2 run-instances --image-id ami-79873901 --count 1 \
 --instance-type t2.micro --key-name *your-key-name* --security-groups *your-security-groups* \
 --user-data file://user-data.sh
 ```
+
+2. Create a simple cassandra keystore holding our data. Can be found in the cassandra-setup.sh file. The data is found in the data folder. I have added the Year column to all the files.
