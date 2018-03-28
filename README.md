@@ -8,8 +8,17 @@ This repo will contain a codebase for the continuing of our winning prototype fr
 
 1. Build a Cassandra backend to store the 1997-2018 business licence dataset.
 2. Build a Go API to access the Cassandra database.
+3. Build a VueJS front-end for the API.
+4. Build a machine learning microservice with PySpark.
 
 ## Progress
+
+### Requirements
+
+Go 1.10
+openjdk 1.8.0_151
+Cassandra 3.11.2
+cqlsh 5.0.1
 
 1. Setup an AWS EC2 to host our data and make it accessible.
 
