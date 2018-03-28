@@ -25,5 +25,5 @@ aws ec2 run-instances --image-id ami-79873901 --count 1 \
 
 The server is live and allows for GET requests for some 2018 business licence data, e.g. licenceRSN = 2997942
 ```
-http://34.218.47.133:8081/licence/2997942
+http://52.39.216.146:8081/licence/2997942
 ```
