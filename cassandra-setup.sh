@@ -62,5 +62,5 @@ echo "COPY vancouver_opendata.business_licence (
   FeePaid,
   ExtractDate,
   Year
-  ) FROM './2001business_licences.csv' WITH HEADER=TRUE AND NULL='null';
+  ) FROM './*.csv' WITH HEADER=TRUE AND NULL='null';
 " | cqlsh
