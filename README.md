@@ -19,11 +19,11 @@ aws ec2 run-instances --image-id ami-79873901 --count 1 \
 --user-data file://user-data.sh
 ```
 
-2. Create a simple cassandra keystore holding our data. Can be found in the cassandra-setup.sh file. The data is found in the data folder. I have added the Year column to all the files. Currently have some 2018 and 2017 data in the database.
+2. Create a simple cassandra keystore holding our data. Can be found in the cassandra-setup.sh file. The data is found in the data folder. I have added the Year column to all the files.
 
 3. Build a simple golang server to relay http requests to access the cassandra database. This was adapted from Ian Douglas (https://getstream.io/blog/building-a-performant-api-using-go-and-cassandra/).
 
-The server is live at
+The server is live and execute GET requests for some 2018 business licence data, e.g. licenceRSN = 2997942
 ```
-http://34.218.47.133:8081/
+http://34.218.47.133:8081/licence/2997942
 ```

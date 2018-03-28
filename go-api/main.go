@@ -6,6 +6,7 @@ import (
   "encoding/json"
   "github.com/gorilla/mux"
   "go-api/Cassandra"
+  "go-api/Licences"
 )
 
 type heartbeatResponse struct {
@@ -19,7 +20,7 @@ func main() {
 
   router := mux.NewRouter().StrictSlash(true)
   router.HandleFunc("/", heartbeat)
-  // router.HandleFunc("/licences/{licence_LicenceRSN}", Licences.GetOne)
+  router.HandleFunc("/licence/{licence_LicenceRSN}", Licences.GetLicence)
   log.Fatal(http.ListenAndServe(":8081", router))
 }
 
